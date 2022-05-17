@@ -22,7 +22,8 @@ class MyWindow(QWidget):
         self.setLayout(layout)
 
         # l1
-        l1_layout = QFormLayout()
+        # l1_layout = QFormLayout()
+        l1_layout = QHBoxLayout()
         layout.addLayout(l1_layout)
 
         self.clear_btn = QPushButton('清理画布')
