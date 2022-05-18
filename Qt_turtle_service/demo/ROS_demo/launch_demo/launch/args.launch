@@ -1,0 +1,9 @@
+<launch>
+    <arg name="length" default="0.5" />
+    <param name="A" value="$(arg length) " />
+    <param name="B" value="$(arg length) " />
+    <param name="C" value="$(arg length) " />
+
+</launch>
+
+<!--也可以在命令窗口手动修改宏值 roslaunch launch_demo args.launch length:=1.0 -->

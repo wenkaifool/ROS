@@ -1,0 +1,13 @@
+<!-- <launch deprecated="此文件已过时，不建议使用！"> -->
+<launch>
+    <param name= "param_a" type="int" value="100" />
+    <rosparam command="load" file="$(find launch_demo)/launch/params.yaml" />
+    <rosparam command="dump" file="$(find launch_demo)/launch/params_dump.yaml" />
+    
+    <node pkg="turtlesim" type="turtlesim_node" name="myTurtle" output="screen" required="true">
+        <remap from="/turtle1/cmd_vel" to="/cmd_vel" />
+        <param name= "param_b" type="double" value="100.06" />
+        <rosparam command="load" file="$(find launch_demo)/launch/params.yaml" />
+    </node>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="myTurtlectr" output="screen"/>
+</launch>

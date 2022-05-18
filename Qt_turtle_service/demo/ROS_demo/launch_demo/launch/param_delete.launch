@@ -1,0 +1,3 @@
+<launch>
+    <rosparam command="delete" param="/param_a" />
+</launch>

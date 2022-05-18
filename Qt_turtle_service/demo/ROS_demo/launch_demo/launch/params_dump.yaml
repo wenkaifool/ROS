@@ -1,0 +1,16 @@
+bg_B: 300
+bg_G: 200
+bg_R: 100
+myTurtle: {background_b: 255, background_g: 86, background_r: 69, bg_B: 300, bg_G: 200,
+  bg_R: 100, param_b: 100.06}
+param_a: 100
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_wenkai_inspiron_7460__40987: 'http://wenkai-Inspiron-7460:40987/', host_wenkai_inspiron_7460__43433: 'http://wenkai-Inspiron-7460:43433/',
+    host_wenkai_inspiron_7460__43799: 'http://wenkai-Inspiron-7460:43799/'}
+rosversion: '1.14.13
+
+  '
+run_id: 503cfb00-d644-11ec-bbd6-34f64bf15734
