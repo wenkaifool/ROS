@@ -1,0 +1,5 @@
+<library path="lib/libmynodeletlib">
+    <class name="nodelet_demo/MyPlus" type="nodelet_plugin::MyPlus" base_class_type="nodelet::Nodelet" >
+        <description>hello</description>
+    </class>
+</library>
