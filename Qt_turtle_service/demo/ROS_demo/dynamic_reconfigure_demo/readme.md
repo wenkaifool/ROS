@@ -21,4 +21,4 @@
 (3) 启动客户端:rosrun rqt_gui rqt_gui -s rqt_reconfigure或rosrun rqt_reconfigure rqt_reconfigure  
 (4) 最终可以通过客户端提供的界面修改数据，并且修改完毕后，服务端会即时输出修改后的结果，最终运行结果与示例类似。
 
-![image]()
+![image](https://github.com/wenkaifool/ROS_turtleplay/blob/master/Qt_turtle_service/demo/ROS_demo/dynamic_reconfigure_demo/image/dynamic_reconfigure.png)
