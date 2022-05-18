@@ -1,5 +1,5 @@
 action 是一种类似于服务通信的实现，其实现模型也包含请求和响应，但是不同的是，在请求和响应的过程中，服务端还可以连续的反馈当前任务进度，客户端可以接收连续反馈并且还可以取消任务，如下图所描述：  
-![image]()  
+![image](https://github.com/wenkaifool/ROS_turtleplay/blob/master/Qt_turtle_service/demo/ROS_demo/action_demo/image/action_struct.png)  
 
 应用场景  
 一般适用于耗时的请求响应场景,用以获取连续的状态反馈。  
