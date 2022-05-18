@@ -7,3 +7,5 @@
    (2) 在乌龟显示窗体中生成一只新的乌龟(需要使用服务)  
    (3) 编写两只乌龟发布坐标信息的节点  
    (4) 编写订阅节点订阅坐标信息并生成新的相对关系生成速度信息
+   
+![image](https://github.com/wenkaifool/ROS_turtleplay/tree/master/turtle_chase/image)
