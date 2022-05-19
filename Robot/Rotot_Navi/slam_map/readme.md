@@ -39,3 +39,5 @@ gmapping 功能包中的核心节点是:slam_gmapping。为了方便调用，需
 3.启动键盘键盘控制节点，用于控制机器人运动建图  
   rosrun teleop_twist_keyboard teleop_twist_keyboard.py  
 4.在 rviz 中添加组件，显示栅格地图  
+
+![image](https://github.com/wenkaifool/ROS/blob/master/Robot/Rotot_Navi/overall/image/gmapping_map.png)
