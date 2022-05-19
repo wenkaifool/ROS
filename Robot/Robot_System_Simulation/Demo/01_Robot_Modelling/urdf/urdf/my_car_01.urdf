@@ -1,0 +1,51 @@
+<robot name="mycar">
+    <!-- 设置一个原点(机器人中心点的投影) -->
+    <link name="base_footprint">
+        <visual>
+            <geometry>
+                <sphere radius="0.001" />
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <box size = "0.5 0.2 0.1" />
+                <!-- <mesh filename="package://robot_system_modelling/meshes/autolabor_mini.stl"/> -->
+            </geometry>
+            <!-- <origin xyz="0 0 0" rpy="1.57 0 1.57" /> -->
+                <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="car_color">
+                <color rgba="0.0 0.0 1.0 0.5" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="base_link2_base_footprint" type="fixed">
+        <parent link="base_footprint" />
+        <child link = "base_link" />
+        <origin xyz = "0 0 0.05" />
+    </joint>
+
+    <link name="camera">
+        <visual>
+            <geometry>
+                <box size="0.02 0.05 0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="camera_color">
+                <!-- 颜色在0-1之间 -->
+                <color rgba="1 0 0 0.5" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="camera2baselink" type="continuous">
+        <parent link="base_link"/>
+        <child link="camera" />
+        <origin xyz="0.2 0 0.075" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+    </joint>
+</robot>
+

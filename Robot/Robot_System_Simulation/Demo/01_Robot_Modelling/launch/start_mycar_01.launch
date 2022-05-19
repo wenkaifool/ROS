@@ -1,0 +1,15 @@
+<!-- 该 launch 文件需要启动 Rviz，并导入 urdf 文件，Rviz 启动后可以自动载入解析urdf文件，并显示机器人模型 -->
+<!-- 核心问题:如何导入 urdf 文件? 在 ROS 中，可以将 urdf 文件的路径设置到参数服务器，使用的参数名是:robot_description --> 
+<launch>
+    <param name="robot_description" textfile="$(find 01_Robot_Modelling)/urdf/urdf/my_car_01.urdf" />
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find 01_Robot_Modelling)/config/mycar_config_01.rviz" />
+
+    <!-- 添加关节状态发布节点 -->
+    <!-- <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" /> -->
+    <!-- 添加机器人状态发布节点 -->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+    <!-- 可选:用于控制关节运动的节点 -->
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
+
+
+</launch>
