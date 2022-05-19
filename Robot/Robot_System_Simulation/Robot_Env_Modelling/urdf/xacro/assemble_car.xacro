@@ -1,0 +1,10 @@
+<robot name="assemble_car" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="car_headfiles.xacro" />
+    <xacro:include filename="car_base.xacro" />
+    <xacro:include filename="car_camera.xacro" />
+    <xacro:include filename="car_radar.xacro" />
+    <xacro:include filename="car_move.xacro" />
+    <xacro:include filename="car_radar_info.xacro" />
+    <xacro:include filename="car_camera_info.xacro" />
+    <xacro:include filename="car_kinect_info.xacro" />
+</robot>
