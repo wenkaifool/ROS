@@ -34,8 +34,8 @@ move_base与代价地图
 (3) Inflation Layer：膨胀层，在以上两层地图上进行膨胀（向外扩张），以避免机器人的外壳会撞上障碍物。  
 (4) Other Layers：自定义costmap。 
 
-在ROS中，如何计算代价值呢？请看下图:
-![image]()
+在ROS中，如何计算代价值呢？请看下图:  
+![image](https://github.com/wenkaifool/ROS/blob/master/Robot/Rotot_Navi/overall/image/collision.png)
 
 
 source: http://www.autolabor.com.cn/book/ROSTutorials/di-7-zhang-ji-qi-ren-dao-822a28-fang-771f29/72-dao-hang-shi-xian/724-dao-hang-shi-xian-04-lu-jing-gui-hua.html
