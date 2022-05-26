@@ -12,5 +12,5 @@ This respotory is mainly about how to make use of ROS in a basic scenario. It in
   
   ========================================================================   
  
-$ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,. $
+$$ \hat x $$
 $$\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.$$
