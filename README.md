@@ -14,4 +14,5 @@ This respotory is mainly about how to make use of ROS in a basic scenario. It in
  
 $$ \hat x^-_k = A \hat x_(k-1) $$   
 
-$\hat x^-_k $: k时刻系统的状态值.
+$\hat x^-_k $: k时刻系统的状态值.  
+ \( \vec{x_k} \)
